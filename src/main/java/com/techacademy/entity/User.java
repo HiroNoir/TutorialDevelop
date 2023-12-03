@@ -16,11 +16,11 @@ import lombok.Data;
 public class User {
 
     /** 性別用の列挙型 */
-    public static enum Gender{
+    public static enum Gender {
         男性, 女性
     }
 
-    /** 主キー。自働生成 */
+    /** 主キー。自動生成 */
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
