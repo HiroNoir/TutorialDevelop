@@ -21,6 +21,11 @@ public class UserService {
         return userRepository.findAll();
     }
 
+    /** 1件を検索して返す */
+    public User getUser(Integer id) {
+        return userRepository.findById(id).get();
+    }
+
     /** userの登録を行なう */
     @Transactional
     public User saveUser(User user) {
